@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const distPath = path.resolve(__dirname, "dist");
+
 module.exports = {
     mode: "production",
     entry: "./src/index.tsx",
@@ -19,7 +21,7 @@ module.exports = {
             hash: true,
             inject: "body",
             template: path.resolve(__dirname, "src/index.html"),
-            filename: path.resolve(__dirname, "dist/index.html"),
+            filename: distPath + "/index.html",
 
             title: "React boilerplate app"
         })
@@ -29,6 +31,14 @@ module.exports = {
     },
     output: {
         filename: "index.js",
-        path: path.resolve(__dirname, "dist")
+        path: distPath
+    },
+    devServer: {
+        contentBase: distPath,
+        compress: true,
+        port: 8081,
+    },
+    performance: {
+        hints: false
     }
 };

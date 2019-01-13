@@ -7,9 +7,9 @@ Package includes:
 - Unit tests configuration
 - React dependencies and basic setup
 - Linter (tslint) setup
+- Webpack dev server config for development
 
 
 TODO:
 
 - Styles/sass
-- hot reload for webpack
