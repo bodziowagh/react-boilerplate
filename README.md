@@ -1,4 +1,4 @@
-# React + Typescript + Jest boilerplate
+# React + Typescript + Jest boilerplate 🍱
 
 A plug & play package to avoid time consuming manual setup every time I start a new project.
 
