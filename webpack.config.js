@@ -8,7 +8,10 @@ module.exports = {
         rules: [{
             test: /\.tsx?$/,
             exclude: /node_modules/,
-            loader: "ts-loader"
+            use: [
+                "ts-loader",
+                "tslint-loader"
+            ]
         }]
     },
     plugins: [

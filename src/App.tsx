@@ -1,10 +1,8 @@
 import React from "react";
 
-export interface AppProps {}
+export class App extends React.Component<{}> {
 
-export class App extends React.Component<AppProps> {
-
-    public render(): any {
+    render() {
         return (
             <div>
                 Hello! Put your stuff here.
