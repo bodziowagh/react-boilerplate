@@ -1,17 +1,18 @@
 {
-  "compilerOptions": {
+    "compilerOptions": {
 		"module": "es6",
 		"target": "es5",
 		"outDir": "./dist/",
-    "noImplicitAny": true,
-    "sourceMap": true,
-    "allowJs": true,
-		"esModuleInterop": true
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "allowJs": true,
+		"esModuleInterop": true,
+        "jsx": "react"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }
