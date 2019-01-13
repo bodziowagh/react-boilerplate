@@ -1,4 +1,4 @@
-const Example = require("../src/components/example").default;
+const Example = require("../src/script/components/example").default;
 
 describe("Example test", () => {
 

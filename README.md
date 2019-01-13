@@ -2,14 +2,11 @@
 
 A plug & play package to avoid time consuming manual setup every time I start a new project.
 
-Package includes:
+
+`Package includes:`
 - Typescript loader for webpack configuration
 - Unit tests configuration
 - React dependencies and basic setup
 - Linter (tslint) setup
 - Webpack dev server config for development
-
-
-TODO:
-
-- Styles/sass
+- Styles loader (sass)
