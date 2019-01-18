@@ -11,10 +11,10 @@ A plug & play package to avoid time consuming manual setup every time I start a 
 - Webpack dev server config for development
 - Styles loader (sass)
 - i18n (react-intl)
+- Redux state manager
 
 TODO:
-- Redux + react-intl-redux
-- Move @types to dev-dependencies?
+- react-intl-redux
 
 
-Everythuing that has an `example` in its name serves just as an `example`. Remove it from your code.
+Everything that has an `example` in its name serves just as an `example`. Remove it from your code.

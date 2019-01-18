@@ -6,15 +6,19 @@ import "./styles/main.scss";
 
 import { App } from "./script/App";
 import { locales, SupportedLocales } from "./locale/index";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
-// addLocaleData(locales);
+addLocaleData(locales);
 
 ReactDOM.render(
-    <IntlProvider
-        locale={ SupportedLocales.EN }
-        messages={ locales[0].fields }
-    >
-        <App />
-    </IntlProvider>,
+    <Provider store={ store }>
+        <IntlProvider
+            locale={ SupportedLocales.EN }
+            messages={ locales[0].fields }
+        >
+            <App />
+        </IntlProvider>
+    </Provider>,
     document.getElementById("app")
 );
