@@ -10,11 +10,8 @@ A plug & play package to avoid time consuming manual setup every time I start a 
 - Linter (tslint) setup
 - Webpack dev server config for development
 - Styles loader (sass)
-- i18n (react-intl)
+- i18n (react-intl + react-intl-redux)
 - Redux state manager
-
-TODO:
-- react-intl-redux
 
 
 Everything that has an `example` in its name serves just as an `example`. Remove it from your code.

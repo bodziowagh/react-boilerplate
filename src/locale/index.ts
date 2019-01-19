@@ -1,5 +1,9 @@
 import { LABELS as en } from "./en/index";
-import { Locale } from "react-intl";
+
+export interface Locale {   // TODO: react-intl-redux doesn't provide types (verify)
+    locale: string;
+    messages: any;
+}
 
 export enum SupportedLocales {
     EN = "en"
@@ -7,5 +11,9 @@ export enum SupportedLocales {
 
 export const locales: Locale[] = [{
     locale: SupportedLocales.EN,
-    fields: en
+    messages: en
 }];
+
+export function getInitialLocale() {
+    return locales.find((lang: Locale) => lang.locale === SupportedLocales.EN);
+}
