@@ -1,6 +1,6 @@
 import { ExampleActionTypes } from "./example/actions";
 
-type ActionTypes = ExampleActionTypes;  // TODO: Combine all action types
+type ActionTypes = ExampleActionTypes;
 
 export interface Action<T> {
     type: ActionTypes;

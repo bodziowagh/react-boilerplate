@@ -11,6 +11,6 @@ export function exampleAction(payload: SetExampleActionPayload): Action<SetExamp
     };
 };
 
-export type ExamplePayload = SetExampleActionPayload;           // TODO: Combine all payload types
+export type ExamplePayload = SetExampleActionPayload;
 
-export type ExampleActionTypes = typeof SET_EXAMPLE_ACTION;     // TODO: Combine all action types
+export type ExampleActionTypes = typeof SET_EXAMPLE_ACTION;

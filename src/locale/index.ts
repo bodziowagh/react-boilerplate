@@ -1,6 +1,6 @@
 import { LABELS as en } from "./en/index";
 
-export interface Locale {   // TODO: react-intl-redux doesn't provide types (verify)
+export interface Locale {
     locale: string;
     messages: any;
 }

@@ -15,3 +15,7 @@ A plug & play package to avoid time consuming manual setup every time I start a 
 
 
 Everything that has an `example` in its name serves just as an `example`. Remove it from your code.
+
+
+TODO:
+- Verify whether `ts-loader` and `@babel/typescript` do this same thing or not
