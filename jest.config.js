@@ -3,10 +3,10 @@ module.exports = {
         "<rootDir>/src",
         "<rootDir>/tests"
     ],
-    "transform": {
-        "^.+\\.ts?$": "ts-jest"
-    },
-    "testMatch": ["<rootDir>/tests/**/*.js"],
+    "testMatch": [
+        "<rootDir>/tests/**/*.spec.jsx",
+        "<rootDir>/tests/**/*.spec.js"
+    ],
     "moduleFileExtensions": [
         "ts",
         "tsx",
@@ -15,4 +15,12 @@ module.exports = {
         "json",
         "node"
     ],
+    "snapshotSerializers": [
+        "enzyme-to-json/serializer"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/enzyme.config.js",
+    "transform": {
+        "^.+\\.(ts|tsx|js|jsx)$": "babel-jest",
+        "^.+\\.(ts|tsx|js|jsx)$": "ts-jest"
+    }
 }

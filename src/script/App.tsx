@@ -10,8 +10,6 @@ export class App extends React.Component<{}> {
             <div className="example-app">
                 Hello! Put your stuff here.
 
-                <FormattedMessage id={ LOCALE_LABELS.EXAMPLE_LABEL } />
-
                 <Example />
             </div>
         );

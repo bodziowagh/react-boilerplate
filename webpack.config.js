@@ -9,11 +9,15 @@ module.exports = {
     module: {
         rules: [{
             test: /\.tsx?$/,
-            exclude: /node_modules/,
-            use: [
-                "ts-loader",
+            exclude: /node_modules/,    // TODO: reconsider, without it you could use es modules
+            loader: [
+                "babel-loader",
                 "tslint-loader"
-            ]
+            ],
+        }, {
+            test: /\.js$/,
+            use: ["source-map-loader"],
+            enforce: "pre"
         }, {
             test: /\.scss$/,
             use: [

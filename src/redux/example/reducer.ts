@@ -1,12 +1,13 @@
 import { Action } from "../actions";
 import { ExamplePayload, SET_EXAMPLE_ACTION } from "./actions";
+import { LOCALE_LABELS } from "../../locale/labels/index";
 
 export interface ExampleStateShape {
     exampleText: string;
 }
 
 const initialState = {
-    exampleText: "Hello!"
+    exampleText: LOCALE_LABELS.EXAMPLE_LABEL
 };
 
 export function reducer(state: ExampleStateShape = initialState, action: Action<ExamplePayload>): ExampleStateShape {

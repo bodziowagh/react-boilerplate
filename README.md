@@ -5,7 +5,7 @@ A plug & play package to avoid time consuming manual setup every time I start a 
 
 `Package includes:`
 - Typescript loader for webpack configuration
-- Unit tests configuration
+- Unit tests configuration (jest + enzyme)
 - React dependencies and basic setup
 - Linter (tslint) setup
 - Webpack dev server config for development
@@ -15,3 +15,7 @@ A plug & play package to avoid time consuming manual setup every time I start a 
 
 
 Everything that has an `example` in its name serves just as an `example`. Remove it from your code.
+
+
+TODO:
+- test coverage (https://medium.freecodecamp.org/how-to-set-up-jest-enzyme-like-a-boss-8455a2bc6d56)

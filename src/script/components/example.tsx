@@ -1,34 +1,23 @@
 import * as React from "react";
 import { Component } from "react";
-import { connect } from "react-redux";
-import { StateShape } from "../../redux/store";
-import { ExampleStateShape } from "../../redux/example/reducer";
+import { FormattedMessage } from "react-intl";
+import { LOCALE_LABELS } from "../../locale/labels/index";
 
 interface ExampleProps {
-    example: ExampleStateShape;
+    exampleTextId: string;
 }
 
-function mapStateToProps(state: StateShape): ExampleProps {
-    return {
-        example: state.example
-    };
-}
+export class Example extends Component<ExampleProps> {
 
-export const Example = connect(
-    mapStateToProps
-)(
-    class Example extends Component<ExampleProps> {
+    render() {
+        const {
+            exampleTextId = LOCALE_LABELS.EXAMPLE_LABEL
+        } = this.props;
 
-        render() {
-            const {
-                example: { exampleText }
-            } = this.props;
-
-            return (
-                <div>
-                    { exampleText }
-                </div>
-            )
-        }
+        return (
+            <div>
+                <FormattedMessage id={ exampleTextId } />
+            </div>
+        )
     }
-);
+}
