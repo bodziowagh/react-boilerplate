@@ -22,5 +22,10 @@ module.exports = {
     "transform": {
         "^.+\\.(ts|tsx|js|jsx)$": "babel-jest",
         "^.+\\.(ts|tsx|js|jsx)$": "ts-jest"
-    }
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+        "<rootDir>/src/**/*.{ts,tsx}"
+    ],
+    "coverageDirectory": "coverage"
 }

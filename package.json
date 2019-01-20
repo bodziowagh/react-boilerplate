@@ -54,7 +54,7 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "lint": "tslint '**/*.ts'",
-    "test": "jest",
+    "test": "jest -u",
     "clean": "rm -rf ./dist && rm -rf node_modules"
   }
 }

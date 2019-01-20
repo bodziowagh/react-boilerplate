@@ -4,7 +4,7 @@ import { FormattedMessage } from "react-intl";
 import { LOCALE_LABELS } from "../../locale/labels/index";
 
 interface ExampleProps {
-    exampleTextId: string;
+    exampleTextId?: string;
 }
 
 export class Example extends Component<ExampleProps> {

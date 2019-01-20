@@ -9,9 +9,10 @@ module.exports = {
     module: {
         rules: [{
             test: /\.tsx?$/,
-            exclude: /node_modules/,    // TODO: reconsider, without it you could use es modules
+            exclude: /node_modules/,
             loader: [
                 "babel-loader",
+                "ts-loader",
                 "tslint-loader"
             ],
         }, {
