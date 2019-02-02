@@ -14,4 +14,4 @@ A plug & play package to avoid time consuming manual setup every time I start a 
 - Redux state manager
 
 
-Everything that has an `example` in its name serves just as an `example`. Remove it from your code.
+Everything that has an `example` in its name serves just as an `example` (duh!). Remove it from your code.
