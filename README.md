@@ -1,6 +1,7 @@
 # React + Typescript + Jest boilerplate 🍱
 
-A plug & play package to avoid time consuming manual setup every time I start a new project.
+A plug & play package to avoid time consuming manual setup every time I start a new project. 
+Disclaimer: I know of official boilerplates, this project's main goal was to actually set everything up manually by myself in order to be more aware of how things work.
 
 
 `Package includes:`
